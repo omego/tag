@@ -15,7 +15,13 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/my.css" />
 		<link rel="stylesheet" type="text/css" href="css/icemoon.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/myjs.js"></script>
+		<script src="js/jquery.qrcode-0.7.0.min.js"></script>
 		<script src="js/modernizr.custom.js"></script>
+
+		
 	</head>
 	<body>
 		<div id="st-container" class="st-container">
@@ -28,9 +34,9 @@
 			<nav class="st-menu st-effect-12" id="menu-12">
 				<h2 class="icon icon-stack">Sidebar</h2>
 				<ul>
-					<li><a class="icon " href="#">Small Size</a></li>
-					<li><a class="icon " href="#">Medium Size</a></li>
-					<li><a class="icon " href="#">Large Size</a></li>
+					<li><a class="icon " id="closeMenu1" href="page1.php">Small Size</a></li>
+					<li><a class="icon " id="closeMenu2" href="page2.php">Medium Size</a></li>
+					<li><a class="icon " id="closeMenu3" href="page3.php">Large Size</a></li>
 				</ul>
 			</nav>
 
@@ -51,26 +57,4 @@
 							<button data-effect="st-effect-12">Change Size</button>
 							</div>
 						</header>
-						<div class="main clearfix">
 
-							<div class="column">
-								<p>Sidebar menus or off-canvas navigations can be revealed in many creative ways.</p>
-								<p>Here is some inspiration for showing them in style using CSS transitions.</p>
-							</div>
-							<div class="column">
-								<p>Sidebar menus or off-canvas navigations can be revealed in many creative ways.</p>
-								<p>Here is some inspiration for showing them in style using CSS transitions.</p>
-							</div>
-
-							<div class="info">
-								<p>Designed and developed by COMJ IT</p>
-							</div>
-						</div><!-- /main -->
-					</div><!-- /st-content-inner -->
-				</div><!-- /st-content -->
-			</div><!-- /st-pusher -->
-		</div><!-- /st-container -->
-		<script src="js/classie.js"></script>
-		<script src="js/sidebarEffects.js"></script>
-	</body>
-</html>

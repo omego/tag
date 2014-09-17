@@ -8,7 +8,7 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
- var SidebarMenuEffects = (function() {
+var SidebarMenuEffects = (function() {
 
  	function hasParentClass( e, classname ) {
 		if(e === document) return false;
@@ -28,6 +28,9 @@
 	function init() {
 
 		var container = document.getElementById( 'st-container' ),
+	            	reset1 = document.getElementById( 'closeMenu1' ),
+	            	reset2 = document.getElementById( 'closeMenu2' ),
+	            	reset3 = document.getElementById( 'closeMenu3' ),
 			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > button' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
@@ -39,7 +42,14 @@
 					resetMenu();
 					document.removeEventListener( eventtype, bodyClickFn );
 				}
+			},
+			resetClickFn = function(evt) {
+				if (evt.target == reset1 || reset2 || reset3 ) {
+					resetMenu();
+					document.removeEventListener(eventtype, bodyClickFn);
+				}
 			};
+			
 
 		buttons.forEach( function( el, i ) {
 			var effect = el.getAttribute( 'data-effect' );
@@ -53,6 +63,7 @@
 					classie.add( container, 'st-menu-open' );
 				}, 25 );
 				document.addEventListener( eventtype, bodyClickFn );
+				document.addEventListener( eventtype, resetClickFn );
 			});
 		} );
 
