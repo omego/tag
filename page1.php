@@ -26,7 +26,7 @@ if($_GET['type']!='ajax'){
 											<div class="col-md-3"><input class="form-control input-lg" type="text" id="ext" placeholder="EXT." /></div>
 											<div class="col-md-3"> <input class="form-control input-lg" type="text" id="bleep" placeholder="Bleep" /></div>
 
-										<input name="go" class="button-x" value="Create" onclick="dance()" type="button">
+										<input name="go" class="button-x" value="Create" onclick="small()" type="button">
 									</form>
 
 											
@@ -42,7 +42,7 @@ if($_GET['type']!='ajax'){
 								<div class="info">
 									<p>Designed and developed by COMJ IT</p>
 								</div>
-								
+								<script src="js/myjs.js"></script>
 							</div><!-- /main -->
 						</div><!-- /ajax -->
 

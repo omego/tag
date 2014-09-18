@@ -4,5 +4,6 @@
 		</div><!-- /st-container -->
 		<script src="js/classie.js"></script>
 		<script src="js/sidebarEffects.js"></script>
+		<script src="js/toucheffects.js"></script>
 	</body>
 </html>

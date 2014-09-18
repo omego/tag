@@ -140,3 +140,32 @@ textarea:focus {
   	text-align: right;
   }
 }
+
+
+@media print{
+#e {
+   transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+  margin-top: 400px;
+  max-width:106% !important;
+  max-height:105% !important;
+}
+.column{
+display: none;
+}
+.info{
+display: none;
+}
+.codrops-header{
+display: none;
+}
+
+@page 
+        {
+            size: auto;   /* auto is the current printer page size */
+            margin: 0mm;  /* this affects the margin in the printer settings */
+        }
+}
+
+

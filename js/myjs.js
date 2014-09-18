@@ -40,7 +40,7 @@ $("a").on('click', function (e) {
 $.cergis.backForwardButtons();
 
 
-     function dance() {
+     function small() {
 
       
       var canvas = document.getElementById("e");
