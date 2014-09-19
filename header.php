@@ -51,7 +51,7 @@
 					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 						<!-- Top Navigation -->
 						<header class="codrops-header">
-							<img class="logo" src="images/logo.png">
+							<a href="index.php"><img class="logo" src="images/logo.png"></a>
 							<h1>Office Signage Creator <span>Fill, create and print.</span></h1>
 							<div id="st-trigger-effects">
 							<button data-effect="st-effect-12">Change Size</button>
