@@ -26,7 +26,7 @@ if($_GET['type']!='ajax'){
 											<div class="col-md-3"><input class="form-control input-lg" type="text" id="ext" placeholder="EXT." /></div>
 											<div class="col-md-3"> <input class="form-control input-lg" type="text" id="bleep" placeholder="Bleep" /></div>
 
-										<input name="go" class="button-x" value="Create" onclick="dance()" type="button">
+										<input name="go" class="button-x" value="Create" onclick="meduim()" type="button">
 									</form>
 
 											
@@ -36,7 +36,7 @@ if($_GET['type']!='ajax'){
 								</div>
 								<div class="column-x">
 									<canvas class="canvas" id="e" width="1700" height="413"></canvas>
-											<img id="tag" src="images/small-tag.png" alt="" width="150" height="364">
+											<img id="tag" src="images/meduim-tag.png" alt="" width="150" height="364">
 								</div>
 
 								<div class="info">
