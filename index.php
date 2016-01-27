@@ -1,51 +1,39 @@
 <?php
-if($_GET['type']!='ajax'){
+
+//////////////////Counter Logic/////////////////
+////////////////////////////////////////////////
+session_start();
+$counter_name = "counter.txt";
+// Check if a text file exists. If not create one and initialize it to zero.
+if (!file_exists($counter_name)) {
+  $f = fopen($counter_name, "w");
+  fwrite($f,"0");
+  fclose($f);
+}
+// Read the current value of our counter file
+$f = fopen($counter_name,"r");
+$counterVal = fread($f, filesize($counter_name));
+fclose($f);
+// Has visitor been counted in this session?
+// If not, increase counter value by one
+if(!isset($_SESSION['hasVisited'])){
+  $_SESSION['hasVisited']="yes";
+  $counterVal++;
+  $f = fopen($counter_name, "w");
+  fwrite($f, $counterVal);
+  fclose($f); 
+}
+////////////////////////////////////////////////
+///////////////////////////////////////////////*
+
+if(isset($_GET['type'])!='ajax'){
     include 'header.php';
     echo "<div id='main-content'>";
 }
 ?>
 
 
-
-<div class="ajax">
-							<div class="main clearfix">
-							<div class="column">
-							</div>
-								<div class="column">
-									<form action="index.html" method="post">
-										
-											<div><input class="form-control input-lg" type="text" id="prefix" placeholder="Prefix" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="fname" placeholder="First Name" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="lname" placeholder="Last Name" /></div>
-										
-
-											<div class="col-md-12"><input class="form-control input-lg" type="text" id="title1" placeholder="Title" /></div>
-
-
-											 <div class="col-md-6"><input class="form-control input-lg" type="text" id="email" placeholder="Email" /> </div>
-											<div class="col-md-3"><input class="form-control input-lg" type="text" id="ext" placeholder="EXT." /></div>
-											<div class="col-md-3"> <input class="form-control input-lg" type="text" id="bleep" placeholder="Bleep" /></div>
-
-										<input name="go" class="button-x" value="Create" onclick="dance()" type="button">
-									</form>
-
-											
-
-								</div>
-								<div class="column">
-								</div>
-								<div class="column-x">
-									<canvas class="canvas" id="e" width="1700" height="413"></canvas>
-											<img id="tag" src="images/small-tag.png" alt="" width="150" height="364">
-								</div>
-
-								<div class="info">
-									<p>Designed and developed by COMJ IT</p>
-								</div>
-								<script src="js/myjs.js"></script>
-							</div><!-- /main -->
-						</div><!-- /ajax -->
-
+/
 
 
 <div class="bubblingG">

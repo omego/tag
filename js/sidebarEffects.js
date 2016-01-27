@@ -8,6 +8,11 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
+
+
+ /*This Function is used in order to make the menu rotate after pressing
+ on the "CHOOSE SIZE" button*/
+
 var SidebarMenuEffects = (function() {
 
  	function hasParentClass( e, classname ) {

@@ -9,13 +9,27 @@
 		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
+<table border="0"><tr><td>
+<a href="http://csshtmltutorial.com/freewebpagehitcounter.php">
+<img src="http://csshtmltutorial.com/counter.php?display=hits&style=100" alt="Free Web Hit Counter By CSS HTML Tutorial" border="0" />
+</a></td></tr></table>
+.stat {
+    padding:20px 5px;
+    background:#336699;
+    text-align:center;
+    float:left;
+    margin-left:100px;
+    width:150px;
+}
 
 body {
+
 	background: #444;
 	color: #48a770;
 	font-weight: 300;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
+
 
 a {
 	text-decoration: none;
@@ -46,7 +60,7 @@ a:hover, a:focus {
 
 .codrops-header {
 	margin: 0 auto 3em;
-	padding: 3em;
+	padding: 1em;
 	text-align: center;
 }
 
@@ -122,7 +136,7 @@ a:hover, a:focus {
 
 .column {
 	float: left;
-	width: 33%;
+	width: 32.70%;
 	padding: 0 2em;
 	min-height: 300px;
 	position: relative;
@@ -136,6 +150,23 @@ a:hover, a:focus {
 	min-height: 300px;
 	position: relative;
 	text-align: right;
+}
+
+.column-b {
+	float: left;
+	width: 100%;
+	padding: 1em 2em;
+	position: relative;
+	text-align: right;
+	background: #EAE6D3;
+	margin-top: 10px;
+}
+.column-marg{
+	margin-left: 10px;
+}
+.column-a {
+	background: #EAE6D3;
+	padding: 10px;
 }
 
 .column p {
@@ -168,9 +199,9 @@ button:hover {
 .info {
 	text-align: center;
 	font-size: 1.5em;
-	margin-top: 3em;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	clear: both;
-	padding: 3em 0;
 	opacity: 0.7;
 	color: #aca89a;
 }
@@ -179,6 +210,24 @@ button:hover {
 	font-weight: 700;
 	font-size: 0.9em;
 }
+
+.stat-count {
+    font-size: 51px;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    overflow:hidden;
+    font-family:"Georgia", Courier, monospace;
+    padding: 0;
+    position: relative;
+}
+.stat-detail {
+    color:#fff;
+    padding-top:10px;
+    font: italic 1.3rem/1.75 "Georgia", Courier, monospace;
+}
+
 
 @media screen and (max-width: 46.0625em) {
 	.column {

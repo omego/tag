@@ -17,15 +17,15 @@ width: 33px;
 height: 33px;
 margin: 83px auto;
 background: #1C5E2C;
--moz-border-radius: 167px;
+-moz-border-radius: 1167px;
 -moz-animation: bubblingG 1.3s infinite alternate;
--webkit-border-radius: 167px;
+-webkit-border-radius: 1167px;
 -webkit-animation: bubblingG 1.3s infinite alternate;
--ms-border-radius: 167px;
+-ms-border-radius: 1167px;
 -ms-animation: bubblingG 1.3s infinite alternate;
--o-border-radius: 167px;
+-o-border-radius: 1167px;
 -o-animation: bubblingG 1.3s infinite alternate;
-border-radius: 167px;
+border-radius: 1167px;
 animation: bubblingG 1.3s infinite alternate;
 }
 

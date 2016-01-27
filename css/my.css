@@ -22,7 +22,7 @@
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	cursor: pointer;
-	display: inline-block;
+	float: left;
 	margin: 3px 2px;
 	border-radius: 2px;
 }
@@ -79,6 +79,7 @@ textarea {
   border-left: 1px solid #ccc;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
 }
 input[type=text],
 input[type=email],
@@ -105,6 +106,10 @@ input[type=password]:focus,
 textarea:focus {
   outline: 0;
   border-color: #9F792A;
+}
+
+.footer, .push {
+  height: 60px; /* '.push' must be the same height as 'footer' */
 }
 
 @media (max-width: 600px) {	
@@ -143,13 +148,41 @@ textarea:focus {
 
 
 @media print{
-#e {
+html, body {
+width:210mm;
+height:297mm;
+}
+#barcode{
+
+  margin-top: 150px;
+  margin-right: 300px;
+}
+#e1 {
    transform: rotate(90deg);
    -moz-transform: rotate(90deg);
    -webkit-transform: rotate(90deg);
-  margin-top: 400px;
-  max-width:106% !important;
-  max-height:105% !important;
+	margin-top: 300px;
+	width:21cm;
+	height:5.1cm;
+  border:2px solid #c1c1c1 ;
+}
+#e2 {
+   transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+	margin-top: 300px;
+	width:21cm;
+	height:7.5cm;
+    border:2px solid #c1c1c1 ;
+}
+#e3 {
+   transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+	margin-top: 300px;
+	width:21cm;
+	height:11.5cm;
+    border:2px solid #c1c1c1 ;
 }
 .column{
 display: none;
@@ -160,11 +193,16 @@ display: none;
 .codrops-header{
 display: none;
 }
-
+.printer{
+display: none;
+}
+.button-x{
+  display: none;
+}
 @page 
         {
-            size: auto;   /* auto is the current printer page size */
-            margin: 0mm;  /* this affects the margin in the printer settings */
+            size: A4;   /* auto is the current printer page size */
+            margin: center;  /* this affects the margin in the printer settings */
         }
 }
 
