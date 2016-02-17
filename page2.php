@@ -19,11 +19,11 @@ if(isset($_GET['type'])!='ajax'){
 							</div>
 								<div class="column column-a column-marg">
 									<form>
-										
+
 											<div><input class="form-control input-lg" type="text" id="prefix" placeholder="Prefix" /></div>
 											<div class="col-md-5"><input class="form-control input-lg" type="text" id="fname" placeholder="First Name" /></div>
 											<div class="col-md-5"><input class="form-control input-lg" type="text" id="lname" placeholder="Last Name" /></div>
-										
+
 
 											<div class="col-md-12"><input class="form-control input-lg" type="text" id="title1" placeholder="Job Title" /></div>
 											<div class="col-md-12"><input class="form-control input-lg" type="text" id="Department1" placeholder="Department" /></div>
@@ -33,18 +33,18 @@ if(isset($_GET['type'])!='ajax'){
 											<div class="col-md-3"><input class="form-control input-lg" type="text" id="ext" placeholder="EXT." /></div>
 											<div class="col-md-3"> <input class="form-control input-lg" type="text" id="bleep" placeholder="Bleep" /></div>
 
-										
+
 									</form>
 
-											
+
 
 								</div>
 								<div class="column">
 								</div>
-								
+
 								<div class="column-b">
 									<input name="go" class="button-x" value="Create" onclick="getSuccessOutput();meduim();"   type="button">
-									
+
 									<button id="printer" class="printer" onclick="Printed()">Print</button>
 								</div>
 
@@ -56,7 +56,7 @@ if(isset($_GET['type'])!='ajax'){
 
 											<img id="tag" src="images/meduim-tag.png" alt="" width="150" height="364">
 											<div id="printHere" style="margin-bottom:20px;">
-	 
+
 </div>
 								</div>
 
@@ -73,7 +73,7 @@ if(isset($_GET['type'])!='ajax'){
 </span>
 <span id="bubblingG_3">
 </span>
-</div> -->
+</div>
 <?php
 if($_GET['type']!='ajax'){
     echo "</div>";

@@ -74,7 +74,7 @@ $.cergis.backForwardButtons();*/
       var tag = document.getElementById("tag");
       var qr = document.getElementById("qr");
 
-      
+
       var firstline = prefix + spaced + fname + spaced + lname;
       var secondline = title1;
       var secthirdline = Department1;
@@ -103,11 +103,11 @@ $.cergis.backForwardButtons();*/
       context.font = "bold 70px Arial";
       context.fillText(firstline, 100, 160);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(secondline, 100, 210);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(secthirdline, 100, 255);
 
@@ -115,7 +115,7 @@ $.cergis.backForwardButtons();*/
       context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(thirdline, 100, 300);
-     
+
           };
           images[src].src = sources[src];
         }
@@ -129,18 +129,18 @@ $.cergis.backForwardButtons();*/
       context.drawImage(images.image1, 0, 0, 1700, 413);
 
              if (fname && lname && title1 != "") {
-      context.drawImage(images.image2, 1450, 95, 200, 200);         
+      context.drawImage(images.image2, 1450, 95, 200, 200);
        }
 
 
       });
-       
 
-      
+
+
     }
 
     function meduim() {
-      
+
 
 
       var canvas = document.getElementById('e2');
@@ -164,7 +164,7 @@ $.cergis.backForwardButtons();*/
       var tag = document.getElementById("tag");
       var qr = document.getElementById("qr");
 
-      
+
       var firstline = prefix + spaced + fname + spaced + lname;
       var secondline = title1;
       var secthirdline = Department1;
@@ -193,11 +193,11 @@ $.cergis.backForwardButtons();*/
       context.font = "bold 80px Arial";
       context.fillText(firstline, 100, 210);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 40px Arial";
       context.fillText(secondline, 100, 280);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 40px Arial";
       context.fillText(secthirdline, 100, 330);
 
@@ -215,14 +215,14 @@ $.cergis.backForwardButtons();*/
         image2: str
       };
       loadImages(sources, function(images) {
-      context.drawImage(images.image1, 0, 0, 1700, 550);
+      context.drawImage(images.image1, 0, 0, 1700, 648);
 
        if (fname && lname && title1 != "") {
       context.drawImage(images.image2, 1450, 150, 200, 200);
        }
 
       });
-       
+
 
     }
 
@@ -231,7 +231,7 @@ $.cergis.backForwardButtons();*/
 
 var post = document.getElementById('printer');
       post.style.display = 'block'; // to show
-      
+
       var canvas = document.getElementById("e3");
       var context = canvas.getContext("2d");
 
@@ -289,12 +289,12 @@ var post = document.getElementById('printer');
       var tag = document.getElementById("tag");
       var qr = document.getElementById("qr");
 
-      
+
       var firstline = prefix + spaced + fname + spaced + lname;
       var secondline = title1;
       var secthirdline = Department1;
       var thirdline =  email + spaced + eee + spaced + bleep;
-        
+
 
 
       var firstline2 = prefix2 + spaced + fname2 + spaced + lname2;
@@ -338,11 +338,11 @@ var post = document.getElementById('printer');
       context.font = "bold 50px Arial";
       context.fillText(firstline, 100, 200);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(secondline, 100, 250);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(secthirdline, 100, 290);
 
@@ -356,11 +356,11 @@ var post = document.getElementById('printer');
       context.font = "bold 50px Arial";
       context.fillText(firstline2, 100, 400);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(secondline2, 100, 450);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(secthirdline2, 100, 490);
 
@@ -373,11 +373,11 @@ var post = document.getElementById('printer');
       context.font = "bold 50px Arial";
       context.fillText(firstline3, 100, 640);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(secondline3, 100, 690);
 
-      context.fillStyle = "#c1c1c1"; 
+      context.fillStyle = "#c1c1c1";
       context.font = "bold 30px Arial";
       context.fillText(secthirdline3, 100, 730);
 
@@ -399,8 +399,8 @@ var post = document.getElementById('printer');
         image4: str3
       };
       loadImages(sources, function(images) {
-     
-      context.drawImage(images.image1, 0, 0, 1700, 960);
+
+      context.drawImage(images.image1, 0, 0, 1700, 971);
        if (fname && lname && title1 != "") {
             context.drawImage(images.image2, 1450, 105, 200, 200);
           }
@@ -420,7 +420,7 @@ var post = document.getElementById('printer');
 
      /* var post = document.getElementById('printer');
       post.style.display = 'block'; // to show
-      
+
       var canvas = document.getElementById("e3");
       var context = canvas.getContext("2d");
 
@@ -465,7 +465,7 @@ var post = document.getElementById('printer');
       var tag = document.getElementById("tag");
 
 
-      
+
       var firstline = prefix + spaced + fname + spaced + lname;
       var secondline = title1;
       var thirdline = email + comma + ext + comma + bleep;
@@ -524,6 +524,3 @@ var post = document.getElementById('printer');
       context.font = "bold 30px Arial";
       context.fillText(thirdline3, 100, 800);
       */
-    
-  
-  
