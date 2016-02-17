@@ -1,7 +1,4 @@
-Created by Codrops
+Created by Moayad alserihi
+Developed by Emad Khawaja
 
-http://www.codrops.com
-
-Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
-
-Read more here: http://tympanus.net/codrops/licensing/
+Simple web application for creating offices signage.
