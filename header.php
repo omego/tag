@@ -44,23 +44,24 @@
 
 	</head>
 	<body>
+<<<<<<< HEAD
 		
+=======
+<<<<<<< Updated upstream
+>>>>>>> master
 	<? error_reporting(0); ?>
 	<?php $IE6 = (preg_match('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
     $IE7 = (preg_match('MSIE 7',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
     $IE8 = (preg_match('MSIE 8',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
+=======
+>>>>>>> Stashed changes
 
-if (($IE6 == 1) || ($IE7 == 1) || ($IE8 == 1)) {
- // Do fallback stuff that old browsers can do here
-?>
-<h1 style="color:red;text-align:center;">You are using Internet Explorer <br><span>Please, use Google Chrome or Mozilla Firefox.</span></h1>
-echo "<img src='chrome.png'>";
-echo "<img src='firefox.png'>";
-<?
 
+<<<<<<< Updated upstream
 } else {
+=======
+>>>>>>> Stashed changes
 
-?>
 
 
 		<div id="st-container" class="st-container">
@@ -97,4 +98,3 @@ echo "<img src='firefox.png'>";
 							</div>
 
 						</header>
-<?php } ?>
