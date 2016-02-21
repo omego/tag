@@ -44,7 +44,7 @@
 
 	</head>
 	<body>
-		
+
 	<? error_reporting(0); ?>
 	<?php $IE6 = (preg_match('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
     $IE7 = (preg_match('MSIE 7',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
@@ -59,6 +59,14 @@ echo "<img src='firefox.png'>";
 <?
 
 } else {
+
+	session_start();
+$count_my_page = ("counter.txt");
+$hits = file($count_my_page);
+$hits[0] ++;
+$fp = fopen($count_my_page , "w");
+fputs($fp , "$hits[0]");
+fclose($fp);
 
 ?>
 
