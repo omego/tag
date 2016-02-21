@@ -44,6 +44,7 @@
 
 	</head>
 	<body>
+		
 	<? error_reporting(0); ?>
 	<?php $IE6 = (preg_match('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
     $IE7 = (preg_match('MSIE 7',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
