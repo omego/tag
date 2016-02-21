@@ -9,10 +9,6 @@
 		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
-<table border="0"><tr><td>
-<a href="http://csshtmltutorial.com/freewebpagehitcounter.php">
-<img src="http://csshtmltutorial.com/counter.php?display=hits&style=100" alt="Free Web Hit Counter By CSS HTML Tutorial" border="0" />
-</a></td></tr></table>
 .stat {
     padding:20px 5px;
     background:#336699;
@@ -234,14 +230,14 @@ button:hover {
 		width: 100%;
 		min-width: auto;
 		min-height: auto;
-		padding: 2em; 
+		padding: 2em;
 		text-align: center;
 	}
 	.column-x {
 		width: 100%;
 		min-width: auto;
 		min-height: auto;
-		padding: 2em; 
+		padding: 2em;
 		text-align: center;
 	}
 

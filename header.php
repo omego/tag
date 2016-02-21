@@ -2,8 +2,8 @@
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Office Signage Creator</title>
 		<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
 		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
@@ -19,15 +19,15 @@
 
 		<script src="js/jquery.js"></script>
 		<script src="js/myjs.js"></script>
-		
+
 		<script src="js/modernizr.custom.js"></script>
 		   <script>
 		// handles the click event, sends the query
 		function getSuccessOutput() {
-			
-		
 
-		    	
+
+
+
 			    $.ajax({
 			        url:'api.php',
 			        complete: function (response) {
@@ -38,16 +38,16 @@
 			        },
 			    });
 			    return false;
-		
+
 		}
 		  </script>
-		
+
 	</head>
 	<body>
 	<? error_reporting(0); ?>
-	<?php $IE6 = (ereg('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
-    $IE7 = (ereg('MSIE 7',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
-    $IE8 = (ereg('MSIE 8',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
+	<?php $IE6 = (preg_match('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
+    $IE7 = (preg_match('MSIE 7',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
+    $IE8 = (preg_match('MSIE 8',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
 
 if (($IE6 == 1) || ($IE7 == 1) || ($IE8 == 1)) {
  // Do fallback stuff that old browsers can do here
@@ -57,14 +57,14 @@ echo "<img src='chrome.png'>";
 echo "<img src='firefox.png'>";
 <?
 
-} else { 
+} else {
 
 ?>
 
 
 		<div id="st-container" class="st-container">
-			<!-- 	
-				example menus 
+			<!--
+				example menus
 				these menus will be on top of the push wrapper
 			-->
 			</nav>
@@ -80,8 +80,8 @@ echo "<img src='firefox.png'>";
 
 			<!-- content push wrapper -->
 			<div class="st-pusher">
-				<!-- 	
-					example menus 
+				<!--
+					example menus
 					these menus will be under the push wrapper
 				-->
 
