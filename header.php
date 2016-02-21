@@ -44,24 +44,28 @@
 
 	</head>
 	<body>
-<<<<<<< HEAD
-		
-=======
-<<<<<<< Updated upstream
->>>>>>> master
-	<? error_reporting(0); ?>
-	<?php $IE6 = (preg_match('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
-    $IE7 = (preg_match('MSIE 7',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
-    $IE8 = (preg_match('MSIE 8',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
-=======
->>>>>>> Stashed changes
+		<? error_reporting(0); ?>
+		<?php $IE6 = (preg_match('MSIE 6',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
+	    $IE7 = (preg_match('MSIE 7',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
+	    $IE8 = (preg_match('MSIE 8',$_SERVER['HTTP_USER_AGENT'])) ? true : false;
+	if (($IE6 == 1) || ($IE7 == 1) || ($IE8 == 1)) {
+	 // Do fallback stuff that old browsers can do here
+	?>
+	<h1 style="color:red;text-align:center;">You are using Internet Explorer <br><span>Please, use Google Chrome or Mozilla Firefox.</span></h1>
+	echo "<img src='chrome.png'>";
+	echo "<img src='firefox.png'>";
+	<?
+	} else {
 
+session_start();
+$count_my_page = ("counter.txt");
+$hits = file($count_my_page);
+$hits[0] ++;
+$fp = fopen($count_my_page , "w");
+fputs($fp , "$hits[0]");
+fclose($fp);
 
-<<<<<<< Updated upstream
-} else {
-=======
->>>>>>> Stashed changes
-
+?>
 
 
 		<div id="st-container" class="st-container">
@@ -98,3 +102,4 @@
 							</div>
 
 						</header>
+<?php } ?>

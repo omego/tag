@@ -3,18 +3,10 @@
 </div><!-- /st-content-inner --><div class="push"></div>
 								<div class="footer">
 								<div class="info">
-<<<<<<< Updated upstream
-									<p>V 2.7 / 2016</p>
-									<p>Feed back and support (Email comj-itsupport@ngha.med.sa, Extinsion 42444)</p>
+									<p>Total visitors <?php echo $hits[0]; ?> </p>
+									<p>Feedback and support (Email comj-itsupport@ngha.med.sa, Extinsion 42444)</p>
+									<p>V 2.8 / 2016</p>
 									<?php require("simphp.php"); ?>
-
-=======
-									<p>For More information and Inquiries Please Contact: Test@Test.com</p>
-								<div class="info">
-									<p>V 2.5 / 2016</p>
-									<?php require("simphp.php"); ?>
-								</div>
->>>>>>> Stashed changes
 								</div>
 								</div>
 				</div><!-- /st-content -->
