@@ -67,9 +67,13 @@ $.cergis.backForwardButtons();*/
       var ext = document.getElementById("ext").value;
       var bleep = document.getElementById("bleep").value;
 
+      var eee ="";
       var spaced = " ";
       var comma = ", ";
       var bbb = "<br>";
+
+        if (ext.length != 0){
+        eee = "Ext. " + ext;}
 
       var tag = document.getElementById("tag");
       var qr = document.getElementById("qr");
@@ -78,7 +82,8 @@ $.cergis.backForwardButtons();*/
       var firstline = prefix + spaced + fname + spaced + lname;
       var secondline = title1;
       var secthirdline = Department1;
-      var thirdline = email + spaced + "Ext. " + ext + spaced + bleep;
+      var thirdline =  email + spaced + eee + spaced + bleep;
+
 
       var qrx = firstline + bbb + secondline + bbb + secthirdline + bbb + thirdline;
       var str = "http://chart.googleapis.com/chart?chs=230x230&cht=qr&chl=" + qrx + "";
@@ -157,9 +162,14 @@ $.cergis.backForwardButtons();*/
       var ext = document.getElementById("ext").value;
       var bleep = document.getElementById("bleep").value;
 
+      var eee ="";
       var spaced = " ";
       var comma = ", ";
       var bbb = "<br>";
+            
+
+       if (ext.length != 0){
+       eee = "Ext. " + ext;}
 
       var tag = document.getElementById("tag");
       var qr = document.getElementById("qr");
@@ -168,7 +178,8 @@ $.cergis.backForwardButtons();*/
       var firstline = prefix + spaced + fname + spaced + lname;
       var secondline = title1;
       var secthirdline = Department1;
-      var thirdline = email + spaced + "Ext. " + ext + spaced + bleep;
+      var thirdline =  email + spaced + eee + spaced + bleep;
+
 
       var qrx = firstline + bbb + secondline + bbb + secthirdline + bbb + thirdline;
       var str = "http://chart.googleapis.com/chart?chs=230x230&cht=qr&chl=" + qrx + "";
