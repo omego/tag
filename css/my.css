@@ -33,7 +33,7 @@
 }
 
 form header {
-  margin: 0 0 20px 0; 
+  margin: 0 0 20px 0;
 }
 form header div {
   font-size: 90%;
@@ -112,12 +112,12 @@ textarea:focus {
   height: 60px; /* '.push' must be the same height as 'footer' */
 }
 
-@media (max-width: 600px) {	
+@media (max-width: 600px) {
   .canvas {
   	width: 100%;
-  }	
+  }
   form > div {
-    margin: 0 0 15px 0; 
+    margin: 0 0 15px 0;
   }
   form > div > label,
   legend {
@@ -136,7 +136,7 @@ textarea:focus {
   input[type=password],
   textarea,
   select {
-    width: 100%; 
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -199,11 +199,9 @@ display: none;
 .button-x{
   display: none;
 }
-@page 
+@page
         {
             size: A4;   /* auto is the current printer page size */
-            margin: center;  /* this affects the margin in the printer settings */
+            margin: 0;  /* this affects the margin in the printer settings */
         }
 }
-
-
