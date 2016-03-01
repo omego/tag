@@ -18,22 +18,21 @@ if(isset($_GET['type'])!='ajax'){
 							<div class="column">
 							</div>
 								<div class="column column-a column-marg">
-									<form>
+									<form method="post" action="pdf-medium.php">
 
-											<div><input class="form-control input-lg" type="text" id="prefix" placeholder="Prefix" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="fname" placeholder="First Name" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="lname" placeholder="Last Name" /></div>
+											<div><input class="form-control input-lg" type="text" name="prefix" id="prefix" placeholder="Prefix" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="fname" id="fname" placeholder="First Name" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="lname" id="lname" placeholder="Last Name" /></div>
 
 
-											<div class="col-md-12"><input class="form-control input-lg" type="text" id="title1" placeholder="Job Title" /></div>
+											<div class="col-md-12"><input class="form-control input-lg" type="text" name="title" id="title" placeholder="Job Title" /></div>
 											<div class="col-md-12"><input class="form-control input-lg" type="text" id="Department1" placeholder="Department" /></div>
 
 
-											 <div class="col-md-6"><input class="form-control input-lg" type="text" id="email" placeholder="Email" /> </div>
-											<div class="col-md-3"><input class="form-control input-lg" type="text" id="ext" placeholder="EXT." /></div>
-											<div class="col-md-3"> <input class="form-control input-lg" type="text" id="bleep" placeholder="Bleep" /></div>
+											 <div class="col-md-6"><input class="form-control input-lg" type="text" name="email" id="email" placeholder="Email" /> </div>
+											<div class="col-md-3"><input class="form-control input-lg" type="text" name="ext" id="ext" placeholder="EXT." /></div>
 
-
+<input name="go" type="submit" class="button-x" value="Create" type="button">
 									</form>
 
 

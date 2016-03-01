@@ -23,7 +23,7 @@ if(isset($_GET['type'])!='ajax'){
 							<div class="column">
 							</div>
 								<div class="column column-a column-marg">
-									<form method="post" action="pdf.php">
+									<form method="post" action="pdf-small.php">
 										
 											<div><input class="form-control input-lg" type="text" name="prefix" id="prefix" placeholder="Prefix" /></div>
 											<div class="col-md-5">

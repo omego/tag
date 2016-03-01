@@ -32,19 +32,20 @@ if(isset($_GET['type'])!='ajax'){
 													First Entry 
 												</span>
 											</div>
+											<form method="post" action="pdf-large.php">
 
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="prefix" placeholder="Prefix" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="fname" placeholder="First Name" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="lname" placeholder="Last Name" /></div>
+
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="prefix" id="prefix" placeholder="Prefix" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="fname" id="fname" placeholder="First Name" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="lname" id="lname" placeholder="Last Name" /></div>
 										
 
-											<div class="col-md-12"><input class="form-control input-lg" type="text" id="title1" placeholder="Job Title" /></div>
+											<div class="col-md-12"><input class="form-control input-lg" type="text" name="title" id="title" placeholder="Job Title" /></div>
 											<div class="col-md-12"><input class="form-control input-lg" type="text" id="Department1" placeholder="Department" /></div>
 
 
-											 <div class="col-md-6"><input class="form-control input-lg" type="text" id="email" placeholder="Email" /> </div>
-											<div class="col-md-3"><input class="form-control input-lg" type="text" id="ext" placeholder="EXT." /></div>
-											<div class="col-md-3"> <input class="form-control input-lg" type="text" id="bleep" placeholder="Bleep" /></div>
+											 <div class="col-md-6"><input class="form-control input-lg" type="text" name="email" id="email" placeholder="Email" /> </div>
+											<div class="col-md-3"><input class="form-control input-lg" type="text" name="ext" id="ext" placeholder="EXT." /></div>
 
 										
 
@@ -59,18 +60,17 @@ if(isset($_GET['type'])!='ajax'){
 													Second Entry (optional)
 												</span>
 											</div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="prefix2" placeholder="Prefix" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="fname2" placeholder="First Name" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="lname2" placeholder="Last Name" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="prefix2" id="prefix2" placeholder="Prefix" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="fname2" id="fname2" placeholder="First Name" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="lname2" id="lname2" placeholder="Last Name" /></div>
 										
 
-											<div class="col-md-12"><input class="form-control input-lg" type="text" id="title2" placeholder="Job Title" /></div>
+											<div class="col-md-12"><input class="form-control input-lg" type="text" name="title2" id="title2" placeholder="Job Title" /></div>
 											<div class="col-md-12"><input class="form-control input-lg" type="text" id="Department2" placeholder="Department" /></div>
 
 
-											 <div class="col-md-6"><input class="form-control input-lg" type="text" id="email2" placeholder="Email" /> </div>
-											<div class="col-md-3"><input class="form-control input-lg" type="text" id="ext2" placeholder="EXT." /></div>
-											<div class="col-md-3"> <input class="form-control input-lg" type="text" id="bleep2" placeholder="Bleep" /></div>
+											 <div class="col-md-6"><input class="form-control input-lg" type="text" name="email2" id="email2" placeholder="Email" /> </div>
+											<div class="col-md-3"><input class="form-control input-lg" type="text" name="ext2" id="ext2" placeholder="EXT." /></div>
 
 
 											
@@ -84,22 +84,22 @@ if(isset($_GET['type'])!='ajax'){
 												</span>
 											</div>
 										
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="prefix3" placeholder="Prefix" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="fname3" placeholder="First Name" /></div>
-											<div class="col-md-5"><input class="form-control input-lg" type="text" id="lname3" placeholder="Last Name" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="prefix3" id="prefix3" placeholder="Prefix" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="fname3" id="fname3" placeholder="First Name" /></div>
+											<div class="col-md-5"><input class="form-control input-lg" type="text" name="lname3" id="lname3" placeholder="Last Name" /></div>
 										
 
-											<div class="col-md-12"><input class="form-control input-lg" type="text" id="title3" placeholder="Job Title" /></div>
+											<div class="col-md-12"><input class="form-control input-lg" type="text" name="title3" id="title3" placeholder="Job Title" /></div>
 											<div class="col-md-12"><input class="form-control input-lg" type="text" id="Department3" placeholder="Department" /></div>
 
 
-											 <div class="col-md-6"><input class="form-control input-lg" type="text" id="email3" placeholder="Email" /> </div>
-											<div class="col-md-3"><input class="form-control input-lg" type="text" id="ext3" placeholder="EXT." /></div>
-											<div class="col-md-3"> <input class="form-control input-lg" type="text" id="bleep3" placeholder="Bleep" /></div>
+											 <div class="col-md-6"><input class="form-control input-lg" type="text" name="email3" id="email3" placeholder="Email" /> </div>
+											<div class="col-md-3"><input class="form-control input-lg" type="text" name="ext3" id="ext3" placeholder="EXT." /></div>
 
 									
 
-											
+																						<input name="go" type="submit" class="button-x" value="Create" type="button">
+
 
 								</div>
 
